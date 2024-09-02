@@ -1081,6 +1081,7 @@ body {
 }
 
 .button-3 {
+  border: 1px solid var(--purple);
   background-color: var(--purple);
   color: var(--white);
   text-transform: uppercase;
@@ -1094,6 +1095,10 @@ body {
 
 .button-3:hover {
   background-color: #7f3eff;
+}
+
+.button-3:focus {
+  border: 1px solid var(--purple);
 }
 
 .section-6 {
