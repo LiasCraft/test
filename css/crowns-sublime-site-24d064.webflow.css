@@ -1134,7 +1134,7 @@ body {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  display: flex;
+  display: none;
 }
 
 .success-message-text {
@@ -1159,6 +1159,7 @@ body {
   color: var(--purple);
   text-align: center;
   margin-top: 24px;
+  display: none;
 }
 
 @media screen and (max-width: 991px) {
