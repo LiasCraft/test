@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Sep 03 2024 00:47:56 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Sep 03 2024 00:57:28 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="666b17776e18ef961b24a555" data-wf-site="666b17776e18ef961b24a536">
 <head>
   <meta charset="utf-8">
@@ -206,6 +206,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const formMain = document.querySelector(".form-main");
     const successMessage = document.querySelector(".form-main-success");
     const errorMessage = document.querySelector(".form-error");
+    const closeButton = document.querySelector(".Form-close-button");
     // Изначально скрываем блоки успешной отправки и ошибки
     successMessage.style.display = "none";
     errorMessage.style.display = "none";
@@ -229,15 +230,11 @@ document.addEventListener("DOMContentLoaded", function () {
             errorMessage.style.display = "block";
         });
     });
-    // Добавляем кнопку закрытия и обработчик клика
-    const closeButton = document.createElement("div");
-    closeButton.className = "Form-close-button";
-    closeButton.textContent = "Close";
+    // Обработчик клика на кнопку закрытия
     closeButton.addEventListener("click", function () {
         successMessage.style.display = "none";
         formMain.style.display = "block";
     });
-    successMessage.appendChild(closeButton);
 });
 </script>
 </body>
