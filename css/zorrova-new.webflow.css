@@ -1195,7 +1195,7 @@ img {
   font-size: 1.9em;
 }
 
-.section-video {
+.video {
   background-color: #000;
   position: relative;
 }
@@ -1468,6 +1468,7 @@ img {
 }
 
 .show-hide-button {
+  background-color: var(--light-grey);
   color: var(--vivid-blue);
   margin-top: 8px;
   margin-left: auto;
